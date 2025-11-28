@@ -30,39 +30,7 @@ AthleteIQ is a comprehensive sports talent assessment platform that uses compute
 - **Computer Vision**: Real-time pose estimation and movement analysis
 
 ## System Architecture
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Client Layer  │    │  Application     │    │   AI/ML Layer   │
-│                 │    │     Layer        │    │                 │
-│ ┌─────────────┐ │    │ ┌──────────────┐ │    │ ┌─────────────┐ │
-│ │   Web       │◄─────►│  Next.js App  │◄─────►│  MediaPipe   │ │
-│ │  Browser    │ │    │ │  (Frontend)  │ │    │ │   Pose      │ │
-│ │             │ │    │ └──────────────┘ │    │ │ Detection   │ │
-│ └─────────────┘ │    │                  │    │ └─────────────┘ │
-│                 │    │ ┌──────────────┐ │    │ ┌─────────────┐ │
-│ ┌─────────────┐ │    │ │  Next.js API │◄─────►│ TensorFlow.js│ │
-│ │   Mobile    │◄─────►│  (Backend)   │ │    │ │             │ │
-│ │   Device    │ │    │ └──────────────┘ │    │ └─────────────┘ │
-│ └─────────────┘ │    │                  │    │                 │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                        │                        │
-         │                        │                        │
-         ▼                        ▼                        ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Storage       │    │   External       │    │   Deployment    │
-│    Layer        │    │   Services       │    │     Layer       │
-│                 │    │                  │    │                 │
-│ ┌─────────────┐ │    │ ┌──────────────┐ │    │ ┌─────────────┐ │
-│ │ Supabase    │ │    │ │   Vercel     │ │    │ │   GitHub    │ │
-│ │ PostgreSQL  │ │    │ │  Analytics   │ │    │ │   Actions   │ │
-│ └─────────────┘ │    │ └──────────────┘ │    │ └─────────────┘ │
-│                 │    │                  │    │                 │
-│ ┌─────────────┐ │    │ ┌──────────────┐ │    │ ┌─────────────┐ │
-│ │ Supabase    │ │    │ │  CDN for     │ │    │ │   Vercel    │ │
-│ │  Storage    │ │    │ │  MediaPipe   │ │    │ │  Platform   │ │
-│ │ (Videos)    │ │    │ │   Models     │ │    │ │             │ │
-│ └─────────────┘ │    │ └──────────────┘ │    │ └─────────────┘ │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-
+<img width="527" height="691" alt="image" src="https://github.com/user-attachments/assets/3a94b8fc-fa92-4a04-9e83-940c86b7f405" />
 
 ## Output
 
